@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir build
 zip -r ./build/app.nw * -x /build/\*
 wget -O ./build/nw.tar.gz https://dl.nwjs.io/v0.25.3/nwjs-v0.25.3-linux-x64.tar.gz
 mkdir ./build/nw
