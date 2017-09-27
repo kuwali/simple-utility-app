@@ -1,11 +1,20 @@
 sudo: required
 language: node_js
 node_js:
-  - "4.1"
+  - '4.1'
 
 cache:
   directories:
-    - "node_modules"
-
-script: 
+  - node_modules
+script:
   - bash ./build_script.sh
+
+deploy:
+  provider: releases
+  api_key:
+    secure: melmGp54b/IBBpcETQa9rzXeBoVQEaHZXkuF7NxzfYpCSD1Dw3Dw4CqEZlgJrtPB/tX7Pb8ixPu6QzzomM5YDgHqKxj5bPI4qkPRlRIgZCqOVSouOmHCO4y0ZiHtijcKvR4xQaWTD4u2tAxcDu9xRwPKruILodX6ddjnFsHE0B+BjxFpNNY7S/9f5tqWKZz7xxgHVsx7K4QGxHsWmNjqBvaQNCxW1tq9W6kyb/H62yRxL4qoKWa0PzYJ6w3caHiN2T5zCTLCKo3lhVI7lwraX4NwVm765HrlwjCIZ3FG3+IcjttlXQRCu/e7V32TikM88+jtPAKUfbUYJ2ISgllOqzLXn3c/Jw4mMXvU4kWfUInQrbphr66qIVZZHi+/riEW19ZRvYIUunYKAVqIz73mpUjqKzsiEnof2CZXyuPpE3WINJpzr3Z+gDuVSwJOBp5zwLMkdXqJxFaMu+ELP6k52sWW90hJMrjYSux7Yxypp5y2wlCaY5yYJEk5k8vyX3P2z+alFRErFkoFIsyRguBUpF/DPe3gplftRKYWTd/39og+10rTFQphbaYOyf3NH4JHGPFD/ReQ+Cw6bZlb7aXgJ3e5XTbCaq1614xLUWhsvTqL2QczuhVBWExnT8skl3o1bgzjjLRDJbuvq2ivP5mojWTgdPhwUvyBEJgkpIgM/5I=
+  file: ./build/app
+  skip_cleanup: true
+  on:
+    repo: kuwali/simple-utility-app
+    tags: true
