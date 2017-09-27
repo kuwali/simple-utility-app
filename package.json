@@ -5,12 +5,11 @@
   "devDependencies": {
     "nwjs-download": "^1.4.6",
     "nw-builder": "^3.4.1",
-    "qunit": "^1.0.0",
     "qunitjs": "^2.4.0"
   },
   "scripts": {
     "start": "nw .",
-    "test": "node_modules/qunitjs/bin/qunit",
+    "test": "qunit",
     "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ ."
   }
 }
