@@ -1,0 +1,16 @@
+{
+  "name": "simple-utility-app",
+  "version": "0.0.1",
+  "main": "index.html",
+  "dependencies": {
+    "nw": "^0.25.3"
+  },
+  "devDependencies": {
+    "qunit": "^1.0.0",
+    "qunitjs": "^2.4.0"
+  },
+  "scripts": {
+    "start": "nw .",
+    "test": "node_modules/qunitjs/bin/qunit"
+  }
+}
