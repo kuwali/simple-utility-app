@@ -25,7 +25,14 @@ Untuk saat ini, aplikasi ini hanya berjalan untuk Ubuntu.
 
 Untuk mendownload silahkan menuju ke [release].
 
+## Contribute
+
+E-mail me: kustiawanto.halim@gmail.com.
+
+## Liscence
+[MIT]
 
 [node.js]: <http://nodejs.org>
 [nw.js]: <https://nwjs.io>
 [release]: <https://github.com/kuwali/simple-utility-app/releases>
+[MIT]: <https://github.com/kuwali/simple-utility-app/blob/master/LICENSE>
